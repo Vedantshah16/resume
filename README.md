@@ -1,65 +1,114 @@
-# My Portfolio Website - Overview 🚀
+# Vedant Shah — Portfolio Website
 
-This repository contains the open-source version of my personal portfolio website.  
-Feel free to explore the code and use it for learning and inspiration.
-
----
-
-## ⚠️ Usage Notice
-
-This project is shared for learning purposes only.
-
-Please do NOT:
-- Clone or replicate the full website or design
-- Repost it with minor content changes
-- Use this project for commercial/client work
-- Create tutorials or content using this exact project
-
-If you use parts of the code, you must provide proper credit linking back to the original repository.
-
-Build your own version — don’t just copy.
-
-— Moncy Yohannan
+Personal portfolio for **Vedant Shah**, an AI & ML Developer. Built with React, TypeScript, and interactive 3D graphics powered by Three.js.
 
 ---
 
-## 🛠️ Instructions
+## Tech Stack
 
-I have modified the GSAP Club plugins using trial versions.  
-⚠️ Note: Trial plugins cannot be used for production or hosting.
-
-For official GSAP Club plugins, refer here:  
-https://gsap.com/docs/v3/Installation/
-
----
-
-## ⚙️ Tech Stack
-
-React • TypeScript • GSAP • Three.js • WebGL • HTML • CSS • JavaScript
-
----
-
-## 🎨 Assets Usage
-
-Some 3D assets included in this repository are free to use for learning purposes.
-
-However:
-
-- The original 3D avatar used on my live portfolio is NOT included in this repository
-- That avatar is a custom asset created over ~1 month
-- It is not open source and not available for reuse
-
-Any usage, extraction, or redistribution of that avatar from my live website is strictly prohibited.
+| Category | Technology |
+|----------|-----------|
+| Framework | React 18 + TypeScript |
+| Build Tool | Vite |
+| 3D / WebGL | Three.js, React Three Fiber, Drei |
+| Physics | React Three Rapier, Cannon |
+| Post-Processing | @react-three/postprocessing |
+| Animation | GSAP + @gsap/react |
+| Styling | Tailwind CSS v4, PostCSS |
+| UI Utilities | react-icons, react-fast-marquee |
+| Analytics | Vercel Analytics |
+| Linting | ESLint + TypeScript-ESLint |
 
 ---
 
-![Protfolio-Preview](https://github.com/user-attachments/assets/3c4557e7-6392-4928-b8a9-7b2476ef4edd)
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run development server
+
+```bash
+npm run dev
+```
+
+The site will be available at `http://localhost:5173` (or the next available port).
+
+### Build for production
+
+```bash
+npm run build
+```
+
+Output goes to `dist/`.
+
+### Preview production build
+
+```bash
+npm run preview
+```
+
+### Lint
+
+```bash
+npm run lint
+```
 
 ---
 
-## 📄 License
+## Project Structure
 
-This project is licensed under the Personal Portfolio License (PPL) v1.0.
+```
+.
+├── index.html              # HTML entry point
+├── src/                    # React application source
+│   └── main.tsx            # App entry point
+├── public/                 # Static assets served as-is
+├── scripts/                # Utility / scratch scripts
+├── vite.config.ts          # Vite configuration
+├── tsconfig.json           # TypeScript project references
+├── tsconfig.app.json       # App TypeScript config (strict, ES2020)
+├── tsconfig.node.json      # Node/build-tools TypeScript config
+├── eslint.config.js        # ESLint v9 flat config
+└── package.json
+```
 
-See the LICENSE file for full details
+---
 
+## GSAP Notice
+
+This project uses `gsap-trial` (trial versions of GSAP Club plugins).
+
+> **Trial plugins cannot be used for production hosting.**
+> For deployment, replace with official GSAP Club plugins: https://gsap.com/docs/v3/Installation/
+
+---
+
+## Assets
+
+Some 3D assets in this repository are free-to-use for learning.
+
+- The custom 3D avatar used on the live site is **not included** — it is a proprietary asset (~1 month of work) and is not available for reuse.
+- Extracting, copying, or redistributing the avatar from the live website is strictly prohibited.
+
+---
+
+## License
+
+Licensed under the **Personal Portfolio License (PPL) v1.0** — see [LICENSE](./LICENSE) for full terms.
+
+**In short:** you may study and learn from this code, but you may not clone the design, use it commercially, or redistribute it. Attribution is required for any code reuse.
+
+---
+
+## Contact
+
+**Vedant Shah** — AI & ML Developer
